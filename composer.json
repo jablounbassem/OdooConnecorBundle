@@ -1,6 +1,6 @@
 {
     "name": "sofia/odoo-bundle",
-    "description": "my fourth",
+    "description": "Odoo connector Bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -12,6 +12,11 @@
     "autoload": {
         "psr-4": {
             "Odoo\\ConnectorBundle\\":"src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
         }
     }
 }
