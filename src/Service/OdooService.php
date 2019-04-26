@@ -11,7 +11,6 @@ use Odoo\ConnectorBundle\Traits\ripcord;
 
 class OdooService
 {
-    private $container;
     private $db;
     private $url;
     private $username;
@@ -19,10 +18,10 @@ class OdooService
 
     public function __construct()
        {
-           $this->url=$this->getParameter('url_odoo');
-           $this->db=$this->getParameter('db_odoo');
-           $this->username=$this->getParameter('username_odoo');
-           $this->password=$this->getParameter('password_odoo');
+           $this->url='http://192.168.99.100:8069';
+           $this->db='sofia';
+           $this->username='sofia@gmail.com';
+           $this->password='sofiaholding';
        }
 
     public function checkAccess()
